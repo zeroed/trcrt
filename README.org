@@ -1,6 +1,6 @@
 * Trcrt
 
-Playing aroung with networking libraries.
+Playing around with networking libraries.
 
 ** References
 
