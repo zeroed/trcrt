@@ -1,0 +1,28 @@
+[package]
+name = "trcrt"
+version = "0.1.0"
+authors = ["zeroed <zeroed@posteo.net>"]
+edition = "2018"
+
+[lib]
+name = "trcrtlib"      # The name of the target.
+path = "src/lib.rs"    # The source file of the target.
+test = true            # Is tested by default.
+doctest = true         # Documentation examples are tested by default.
+bench = false          # Is benchmarked by default.
+doc = true             # Is documented by default.
+proc-macro = false     # Set to `true` for a proc-macro library.
+harness = true         # Use libtest harness.
+edition = "2018"       # The edition of the target.
+crate-type = ["lib"]   # The crate types to generate.
+required-features = [] # Features required to build this target (N/A for lib).
+
+[[bin]]
+name = "trcrt"
+path = "src/bin.rs"
+test = false
+bench = false
+
+[dependencies]
+smoltcp = { version = "0.6.0", features = ["std", "log", "verbose"] }
+pnet = "0.26.0"
