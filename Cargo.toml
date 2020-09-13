@@ -24,5 +24,23 @@ test = false
 bench = false
 
 [dependencies]
+
+# https://crates.io/crates/log
+# https://github.com/rust-lang/log
+log = "0.4.11"
+
+# https://crates.io/crates/env_logger
+# https://github.com/env-logger-rs/env_logger
+env_logger = "0.7.1"
+
+# https://crates.io/crates/smoltcp
+# https://github.com/smoltcp-rs/smoltcp
 smoltcp = { version = "0.6.0", features = ["std", "log", "verbose"] }
+
+# https://crates.io/crates/pnet
+# https://github.com/libpnet/libpnet
 pnet = "0.26.0"
+
+# https://crates.io/crates/libc
+# https://github.com/rust-lang/libc
+libc = "0.2.77"
